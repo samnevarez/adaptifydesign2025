@@ -1,5 +1,11 @@
 #about {
 
+    @media screen and (max-width: 992px) {
+        padding: 56px 0;
+    }
+
+    padding: 200px 0;
+
     .about-profile-img{
         width: 80%;
         height: auto;
