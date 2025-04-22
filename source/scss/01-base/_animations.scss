@@ -27,17 +27,6 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .typewriter {
-    width: 80%;
-  }
-
-  @keyframes typing {
-    from { width: 0; }
-    to { width: 20ch; }
-  }
-}
-
 .typewriter {
   font-family: monospace;
   white-space: nowrap;
@@ -48,7 +37,7 @@
   animation: typing 3s steps(36, end) forwards, blink 0.75s step-end infinite;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 992px) {
   .typewriter {
     font-size: 20px;
   }
