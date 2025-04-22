@@ -27,13 +27,31 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .typewriter {
+    width: 80%;
+  }
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 20ch; }
+  }
+}
+
 .typewriter {
   font-family: monospace;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid black;
-  width: 35ch;
-  animation: typing 4s steps(36, end) 0s forwards, blink 0.75s step-end infinite;
+  width: 0;
+  font-size: 32px;
+  animation: typing 3s steps(36, end) forwards, blink 0.75s step-end infinite;
+}
+
+@media (max-width: 600px) {
+  .typewriter {
+    font-size: 24px;
+  }
 }
 
 @keyframes typing {
@@ -70,12 +88,12 @@
 }
 
 .header-animation-1 {
-  animation: fadeInLeft 2s ease-in-out .5s;
+  animation: fadeInLeft 3s ease-in-out .25s;
   animation-fill-mode: backwards;
 }
 
 .header-animation-2 {
-  animation: fadeInUp 1s ease-in-out .5s;
+  animation: fadeInUp 1s ease-in-out 1s;
   animation-fill-mode: backwards;
 }
 
