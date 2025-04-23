@@ -13,7 +13,7 @@
     display: inline-block;
     font-size: 1.95rem;
     font-size: 1.95rem;
-    color: $light-prim-base;
+    color: darken($light-prim-base, 15%);
     background-color: $default-black-base;
     padding: 5px 10px 7px 10px; 
     animation-duration: 2s;

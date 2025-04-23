@@ -1,10 +1,19 @@
 #about {
+    .row {
+        h2 {
+            color: $light-prim-base;
+        }
+        
+        p {
+            color: darken($light-prim-base, 10%);
+        }
+    }
 
     @media screen and (max-width: 992px) {
         padding: 56px 0;
     }
 
-    padding: 200px 0;
+    padding: 80px 0;
 
     .about-profile-img{
         width: 80%;

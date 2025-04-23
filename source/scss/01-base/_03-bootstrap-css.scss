@@ -4307,6 +4307,11 @@
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
   }
   
   .card-title {

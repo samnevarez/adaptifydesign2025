@@ -19,10 +19,11 @@
 
 .btn-primary {
   padding: 1rem;
-  background: linear-gradient(90deg, var(--c1, $default-black-base), var(--c2, $default-black-base) 50%, var(--c1, $default-black-base)) var(--x, 0)/ 200%;
+  background: $dark-prim-base;
   text-decoration: none;
 
   &:hover {
+    background: lighten($dark-prim-base, 10%) !important;
     color: $light-prim-base;
     box-shadow: 0 16px 12px -12px rgba(0, 0, 0, 0.3) !important;
     transform: translateY(-2px);

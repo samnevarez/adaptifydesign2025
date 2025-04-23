@@ -1,53 +1,80 @@
 .card {
-    padding: 1rem 0;
-    transition: all 0.25s ease-in-out;
-    border-radius: 8px;
-    box-shadow:0px 12px 12px -8px #00000018;
-    // border-right: 2px solid dark-sec-base;
-    // border-bottom: 2px solid dark-sec-base;
-    // border-left: 2px solid dark-sec-base;
-    //background: linear-gradient(-45deg, var(--c1, dark-sec-base), var(--c2, dark-sec-base), var(--c1, dark-sec-base)) var(--x, 0)/ 200%;
+  transform: translateY(0);
+  padding: 1rem 0;
+  border-radius: 8px;
+  background: $dark-prim-base !important;
+  border: 2px solid $light-prim-base !important;;
+  --x: 50%;
+  transition:
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-    h4 {
-        font-size: 28px;
-        line-height: 28px;
-        font-weight: 700;
-        color: lighten($default-black-base, 10%) !important;
-        font-family: $primary-font;
+  &:hover {
+    transform: translateY(0);
+    background: darken($light-prim-base, 10%) !important;
+    --x: 50%;
+
+    .card-icons {
+      filter: none;
     }
 
     p {
-        font-size: 16px;
+        color: $dark-prim-base !important;
+        transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &:hover {
-        transform: translateY(2px);
-        transition: all 0.25s ease-in-out;
-        // border-top: 2px solid dark-sec-base;
-        // border-right: 2px solid dark-sec-base;
-        // border-bottom: 2px solid dark-sec-base;
-        // border-left: 2px solid dark-sec-base;
-        background: darken($light-prim-base, 10%) !important;
-        --x: 50%;
-        box-shadow: 0 2.8px 2.2px rgba(0, 242, 206, 0.01),
-        0 6.7px 5.3px rgba(0, 242, 206, 0.02),
-        0 12.5px 10px rgba(0, 242, 206, 0.01),
-        0 22.3px 17.9px rgba(0, 242, 206, 0.02),
-        0 41.8px 33.4px rgba(0, 242, 206, 0.01),
-        0 100px 80px rgba(0, 242, 206, 0.1);
+    h4 {
+      color: $dark-prim-base !important;
+      transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
 
-    }
-    
-    &:active {
-        transform: translateY(2px);
-        --x: 50%;
-    }
+  &:active {
+    transform: translateY(2px);
+    --x: 50%;
+  }
 
-    .card-icons {
-        width: 48px;
-        height: auto;
-    }
+  h4 {
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 700;
+    color: $light-interactive-prim-base;
+    font-family: $primary-font;
+    transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  p {
+    font-size: 16px;
+    color: $light-interactive-prim-base !important;
+    transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card-icons.icon-1 {
+    background-image: url('/img/ec-resume.svg');
+  }
+  
+  .card-icons.icon-2 {
+    background-image: url('/img/ec-linkedin.svg');
+  }
+  
+  .card-icons.icon-3 {
+    background-image: url('/img/ec-email.svg');
+  }
+  
+  .card-icons.icon-4 {
+    background-image: url('/img/ec-phone.svg');
+  }
+  
+  .card-icons {
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: filter 0.3s ease;
+filter: invert(67%) sepia(69%) saturate(719%) hue-rotate(125deg) brightness(94%) contrast(101%);  }
 }
+
 
 .resume-card {
     padding: 1rem 0;
