@@ -34,7 +34,7 @@
   border-right: 2px solid black;
   width: 0;
   font-size: 32px;
-  animation: typing 3s steps(36, end) forwards, blink 0.75s step-end infinite;
+  animation: typing 3s steps(38, end) forwards, blink 0.75s step-end infinite;
 }
 
 @media screen and (max-width: 992px) {
@@ -46,7 +46,7 @@
 @keyframes typing {
   
   from { width: 0; }
-  to { width: 35ch; ;} 
+  to { width: 38ch; ;} 
 }
 
 @keyframes blink {
